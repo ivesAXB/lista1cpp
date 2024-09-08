@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	const double pi = 3.14159;
+	double perimetro, raio, area;
+	
+	printf("Qual o raio do circulo em cm? \n");
+	scanf("%lf", &raio);
+	
+	perimetro = 2*pi*raio;
+	area = pi*(raio*raio);
+	
+	printf("A area e: %.2f\nO perimetro e: %.2f", area, perimetro);
+	
+	return 0;
+}
