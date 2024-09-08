@@ -1,0 +1,29 @@
+#include <stdlib.h>
+
+/*
+Ler um numero, se positivo armazena-lo em variavel A, se negativo, em B.
+
+Entrada: A e B n�o necessariamente como vetores por ser s� 1 numero.
+Mostrar resultado.
+
+*/
+int main() {
+	int numero, varA, varB;
+	
+	printf("Digite um numero: \n");
+	scanf("%d", &numero);
+	
+	if(numero > 0){
+		varA = numero;
+		printf("%d e POSITIVO!\n", varA);
+	}else if(numero < 0){
+		varB = numero;
+		printf("%d e NEGATIVO!\n", varB);
+	}else {
+		printf("Seu numero provavelmente e 0");
+	}
+
+	
+	
+	return 0;
+}
