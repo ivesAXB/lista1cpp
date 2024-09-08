@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	double produto, frete, produtofinal, pfrete;
+	const double desconto = 10.0/100.0;
+	
+	printf("Digite o valor do produto: \n");
+	scanf("%lf", &produto);
+	printf("Digite o valor do frete: \n");
+	scanf("%lf", &frete);
+	
+	pfrete = produto + frete;
+	produtofinal = pfrete - (desconto*pfrete);
+	
+	printf("Valor final: %.2f\n", produtofinal);
+	
+	return 0;
+}
