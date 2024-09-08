@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	int sexo = 1;
+	int altura, peso;
+	
+	printf("0 - Masculino\n1 - Feminino\n");
+	scanf("%d", &sexo);
+	printf("Qual a sua altura em centimetros? \n");
+	scanf("%d", &altura);
+	
+	if(sexo == 1){
+		printf("Voce selecionou Feminino.\n");
+		peso = (62.1*(altura/100.0)) - 44.7;
+	}else if(sexo == 0){
+		printf("Voce selecionou Masculino.\n");
+		peso = (72.7*(altura/100.0)) - 58;
+	}else {
+		printf("Erro: sexo invalido.\n");
+		return 1;
+	}
+	
+	printf("Seu peso ideal: %d", peso);
+	
+	
+	return 0;
+}
+/*
+	char input[20];
+	float altura;
+	
+	printf("Digite a altura: \n");
+	scanf("%s", input);
+	
+	if(strchr(input, ' . ') != NULL) {
+		altura = atof(input);
+		altura = altura * 100.0;
+	}else {
+		altura = atoi(input);
+	}
+	
+	printf()
+	
+	
+	return 0;
+}
+*/
