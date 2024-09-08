@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/*
+Ler numero, se for par armazenar em P,
+quando for impar armazena-lo em I.
+exibir P e I no fim.
+*/
+
+int main() {
+	int numero[4];
+	int i, varPar[i], varImpar[i];
+	int contadorPar = 0, contadorImpar = 0;
+
+	printf("Digite quatro numeros: \n");
+	for(i = 0; i < 4; i++){
+		scanf("%d", &numero[i]);
+		if(numero[i] % 2 == 0){
+			varPar[contadorPar] = numero[i];
+			contadorPar++;
+		}else {
+			varImpar[contadorImpar] = numero[i];
+			contadorImpar++;
+		}
+	}	
+	printf("Os valores pares sao: \n");
+	for(i = 0; i < contadorPar; i++){
+		printf("%d; ", varPar[i]);
+	}
+		printf("\n");
+	printf("Os valores impares sao: \n");
+	for(i = 0; i < contadorImpar; i++){
+		printf("%d; ", varImpar[i]);
+	}
+	
+	
+	return 0;
+}
+
